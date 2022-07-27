@@ -13,9 +13,11 @@ export const Button = ({
   ml,
   mb,
   mt,
+  margin
 })=>{
   return (
     <Container
+      margin={margin}
       mr={mr}
       ml={ml}
       mb={mb}

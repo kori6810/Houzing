@@ -11,8 +11,7 @@ export const Recommended = () => {
   
   const [HomeList, setHomeList] = useState()
   const handleDragStart = (e) => e.preventDefault();
-
-  useQuery('',()=>{
+  useQuery('test',()=>{
    return fetch('https://houzing-app.herokuapp.com/api/v1/houses/list').then((res)=>res.json())
   },{
   onSuccess:(res)=>{

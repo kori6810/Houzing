@@ -26,7 +26,7 @@ const getType = (type)=>{
 
 const Container = styled.div`
   display: flex;
-
+ 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -41,6 +41,8 @@ const Container = styled.div`
   width: ${({width})=> width? width : '100%'};
   
   border-radius: 2px;
+  
+  margin: ${({margin})=>`${margin}`};
   margin-right: ${({mr})=>`${mr}px`};
   margin-left: ${({ml})=>`${ml}px`};
   margin-top: ${({mt})=>`${mt}px`};

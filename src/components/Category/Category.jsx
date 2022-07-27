@@ -14,12 +14,12 @@ export const Category = () => {
 
   const handleDragStart = (e) => e.preventDefault();
   const [CategList, setCateList]=useState()
-  useQuery('',()=>{
+  useQuery('Categ',()=>{
     return fetch('https://houzing-app.herokuapp.com/api/v1/categories/list').then((res)=>res.json())
   },{
     onSuccess:(res)=>{
       const data = res?.data?.map((item)=>{ 
-        console.log(item);
+        // console.log(item);
         
         return <CategoryCard info={item}/>
       })
