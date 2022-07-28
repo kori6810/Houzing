@@ -54,6 +54,43 @@ const DataBox = styled.div`
  
   text-transform: capitalize;
 `
+
+const Featured = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  
+  padding: 5px 12px;
+  gap: 10px;
+  position: absolute;
+  height: 23px;
+  left: 5.26%;
+  right: 75.53%;
+  top: 4%;
+  background: #0061DF;
+  border-radius: 3px;
+`
+const Sale = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:#fff;
+  /* font-weight: bold; */
+  padding: 5px 12px;
+  gap: 10px;
+
+  position: absolute;
+  height: 23px;
+  left: 76.05%;
+  right: 5.26%;
+  top: 4%;
+  /* Color / 2 */
+
+  background: #0D263B;
+  border-radius: 3px;
+`
 const IconWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -91,4 +128,4 @@ align-items: center;
 
 
 
-export {CartWrapper, Img, DataBox, PriceBox, IconWrapper, IconBox, ProImg, ImgWrapper}
+export {CartWrapper, Img, DataBox, PriceBox, IconWrapper, IconBox, ProImg, ImgWrapper, Featured, Sale}

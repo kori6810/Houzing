@@ -6,13 +6,16 @@ import { CartWrapper,
   IconWrapper,
   IconBox,
   ProImg,
-  ImgWrapper} from './style';
+  ImgWrapper,
+  Featured, Sale} from './style';
 
 export const Cart = ({info, mr, ml, margin, onClick}) => {
    
   return (
     <CartWrapper className='nocopy'>
       <ImgWrapper>
+        <Featured>Featured</Featured>
+        <Sale>Sale</Sale>
         <Img src={info?.attachments[0]?.imgPath || 'no img'} alt="home img" />
       </ImgWrapper>
 
