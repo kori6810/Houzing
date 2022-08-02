@@ -21,9 +21,7 @@ export const Properties = () => {
   setShowmore(true)
 
  })
- const logg = ()=>{
-  console.log('clicked');
-}
+ 
 //  console.log(Houses.length);
  let  data = Showmore? Houses?.slice() : Houses?.slice(0,6)
 //  console.log(data);
@@ -53,7 +51,7 @@ export const Properties = () => {
       </ResultBox>
       <Container>
         {data?.map(item=>{
-          return <Cart info={item} onClick={logg()}/>
+          return <Cart info={item} onClick={()=>{navigate(`/properties/${item.id}`)}}/>
         })}
       </Container>
       <Button className='center' width='250px' margin='0 auto' mt='48' mb='50' type='primary' onClick={ShowMore}>Show More</Button>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {ReactComponent as Houses} from '../../../assets/icons/Categ-houses.svg'
+import {ReactComponent as Houses} from '../../../assets/icons/categ-houses.svg'
 
 const Container = styled.div`
   margin: 0 auto;

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, TextWrapper, Title, Img, Icon } from './style'
-import CategImg2 from '../../../assets/categ-img2.png'
+import CategImg2 from '../../../assets/images/uy-1.png'
 
 export const CategoryCard = ({info}) => {
   return (

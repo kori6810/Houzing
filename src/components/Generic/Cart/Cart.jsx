@@ -12,7 +12,7 @@ import { CartWrapper,
 export const Cart = ({info, mr, ml, margin, onClick}) => {
    
   return (
-    <CartWrapper className='nocopy'>
+    <CartWrapper onClick={onClick} className='nocopy'>
       <ImgWrapper>
         <Featured>Featured</Featured>
         <Sale>Sale</Sale>

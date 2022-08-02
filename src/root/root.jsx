@@ -12,18 +12,24 @@ export const Root = () => {
 
     <QueryClientProvider client={queryClient}>
       <Routes>
-      <Route path='/' element={<Navigate to="/home"/>}/>
-      <Route   element={<Navbar/>}>
-        {navbar.map(({title,id,element,path})=>{
-          return (
-            <Route path={path} id ={id} element={element}/>
-          )
+      <Route
+        path='/profile'
+        element={<Navigate to={"/profile/properties"} />}
+      />
+
+      <Route element={<Navbar />}>
+        {navbar.map(({ path, Element, id, param }) => {
+          return param && <Route key={id} path={path} element={Element} />;
         })}
       </Route>
-      <Route path='/properties/:id' element={<ProductPage/>} />
-      <Route path='*' element={<ErrorPage/>}/>
-      {/* <Route path='/' element={<Navbar/>}/> */}
-      </Routes>
+      <Route element={<Navbar />}>
+        {navbar.map(({ path, Element, id, hidden }) => {
+          return !hidden && <Route key={id} path={path} element={Element} />;
+        })}
+        <Route path='/' element={<Navigate to={"/home"} />} />
+      </Route>
+      <Route path='*' element={<div>Page Not Found...</div>} />
+    </Routes>
     </QueryClientProvider>
   
     
