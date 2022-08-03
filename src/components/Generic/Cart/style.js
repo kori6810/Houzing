@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { ReactComponent as beds } from '../../../assets/icons/bed-image.svg';
-import { ReactComponent as bath } from '../../../assets/icons/bath-image.svg';
-import { ReactComponent as garage } from '../../../assets/icons/car-image.svg';
-import { ReactComponent as area } from '../../../assets/icons/area.svg';
-import { ReactComponent as heart } from '../../../assets/icons/heart-image.svg';
-import { ReactComponent as cursor } from '../../../assets/icons/cursor.svg';
+import { ReactComponent as beds } from '../../../assets/icons/beds.svg';
+import { ReactComponent as bath } from '../../../assets/icons/bath.svg';
+import { ReactComponent as garage } from '../../../assets/icons/car.svg';
+import { ReactComponent as area } from '../../../assets/icons/ruler.svg';
+import { ReactComponent as heart } from '../../../assets/icons/love 1.svg';
+import { ReactComponent as cursor } from '../../../assets/icons/arrow-top-bottom.svg';
 
 const CartWrapper = styled.div`
   width: 380px;

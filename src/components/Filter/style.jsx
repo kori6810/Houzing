@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ReactComponent as Setting} from '../../assets/icons/setting.svg';
-import { ReactComponent as Search} from '../../assets/icons/search.svg';
+import { ReactComponent as Setting} from '../../assets/icons/setting-lines.svg';
+import { ReactComponent as Search} from '../../assets/icons/search-icon.svg';
 
 export const Container = styled.div`
   display:flex;

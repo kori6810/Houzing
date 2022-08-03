@@ -1,6 +1,9 @@
 import React from "react";
 import { BtnWrapper, Container, Information, Tour, Wrapper } from "./styles";
-import { Button, Input } from "../../Generic/index";
+// import { Button, Input } from "../../Generic/index";
+import { Button } from "../../Generic/Buttons/Button";
+import Input from '../../Generic/Input/Input';
+
 
 export const Schedule = () => {
   return (

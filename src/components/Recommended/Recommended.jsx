@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Home1 from '../../assets/home1.png'
-import Prof1 from '../../assets/user-image-1.jpg'
 import {useQuery} from 'react-query'
 import AliceCarousel from 'react-alice-carousel';
 import { Cart } from '../Generic/Cart/Cart';

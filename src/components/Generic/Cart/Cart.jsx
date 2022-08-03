@@ -8,6 +8,7 @@ import { CartWrapper,
   ProImg,
   ImgWrapper,
   Featured, Sale} from './style';
+import profilePic from '../../../assets/images/avatar1.png';
 
 export const Cart = ({info, mr, ml, margin, onClick}) => {
    
@@ -19,7 +20,7 @@ export const Cart = ({info, mr, ml, margin, onClick}) => {
         <Img src={info?.attachments[0]?.imgPath || 'no img'} alt="home img" />
       </ImgWrapper>
 
-      <ProImg src={info?.user || 'no img'} alt='profil pic'/>
+      <ProImg src={profilePic} alt='profil pic'/>
       <DataBox>
         <h2>{info?.description || 'description'}</h2>
         <h3 className='description'>

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
-import {ReactComponent as logoIcon} from '../../assets/icons/Vector.svg'
+import {ReactComponent as logoIcon} from '../../assets/icons/logo.svg'
 const Wrapper = styled.div`
   display:flex;
   flex-direction: column;

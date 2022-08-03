@@ -4,7 +4,7 @@ import { Navbar } from '../components/navbar/navbar'
 import { Route,Routes,Navigate } from 'react-router-dom'
 import { ErrorPage } from '../page/error/Error'
 import {QueryClient, QueryClientProvider} from 'react-query'
-import { ProductPage } from '../page/Product/ProductPage'
+
 
 const queryClient = new QueryClient()
 export const Root = () => {
@@ -19,6 +19,7 @@ export const Root = () => {
 
       <Route element={<Navbar />}>
         {navbar.map(({ path, Element, id, param }) => {
+          
           return param && <Route key={id} path={path} element={Element} />;
         })}
       </Route>

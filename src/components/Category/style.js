@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ReactComponent as arrow } from "../../assets/icons/arrow.svg";
-import { ReactComponent as rarrow } from "../../assets/icons/rarrow.svg";
+import { ReactComponent as arrow } from "../../assets/icons/left-arrow.svg";
+import { ReactComponent as rarrow } from "../../assets/icons/right-arrow.svg";
 const Container = styled.div`
    position: relative;
    width:80%;

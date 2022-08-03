@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Card from "../../Card";
+import {Cart} from "../../Generic/Cart/Cart";
 import { ArrowLeft, ArrowRight, Cards, Container, Wrapper } from "./styles";
 import AliceCarousel from "react-alice-carousel";
 import { useQuery } from "react-query";
@@ -24,7 +24,7 @@ export const SimilarListings = () => {
       onSuccess: (res) => {
         let list = res?.data?.map((value) => {
           return (
-            <Card onClick={() => onSelect(value?.id)} title={value?.name} />
+            <Cart onClick={() => onSelect(value?.id)} title={value?.name} />
           );
         });
         setState(list);

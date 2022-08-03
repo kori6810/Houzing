@@ -9,7 +9,7 @@ import {
   Title,
   Wrapper,
 } from "./styles";
-import Button from "../../Generic/Button";
+import { Button } from "../../Generic/Buttons/Button";
 import user from "../../../assets/images/noimg.jpg";
 
 export const CardDetail = () => {

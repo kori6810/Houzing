@@ -2,7 +2,7 @@ import React from 'react'
 import { Container } from './style'
 import Input from '../Generic/Input/Input';
 import {Button} from '../Generic/Buttons/Button'
-import { ReactComponent as SearchHome} from '../../assets/icons/home.svg'; 
+import { ReactComponent as SearchHome} from '../../assets/icons/home-icon.svg'; 
 import { Icon, Wrapper, Fragment, Title } from './style';
 import {  Popover } from 'antd';
 const Filter = () => {

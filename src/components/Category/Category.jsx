@@ -46,7 +46,7 @@ export const Category = () => {
         Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
       </h3>
     </TitleWrapper>
-    <AliceCarousel controlsStrategy='alternate'   ref={slider} mouseTracking items={CategList} 
+    <AliceCarousel    ref={slider} mouseTracking items={CategList} 
     responsive={
       {
         0: {
