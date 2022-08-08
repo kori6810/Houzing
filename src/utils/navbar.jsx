@@ -2,10 +2,10 @@ import React from "react";
 import { Generic } from "../page/generic/Generic";
 import {HomePage} from "../page/Home/Home";
 import {PropertiesPage} from "../page/Properties/Properties";
-// import SignInPage from "../pages/Sign In";
-// import MyProperties from "../pages/MyProperties";
 import AddHouse from "../page/AddHouse/index";
 import DetailesPage from "../page/Detailes";
+import SignInPage from '../page/Sign In';
+import MyPropertiesPage from "../page/MyProperties";
 
 export const navbar = [
   {
@@ -49,7 +49,7 @@ export const navbar = [
     id: 4,
     title: "Sign In",
     path: "/signin",
-    // Element: <SignInPage />,
+    Element: <SignInPage />,
     search: "?",
     hidden: true,
     private: false,
@@ -69,7 +69,7 @@ export const navbar = [
     id: 6,
     title: "MyProperties",
     path: "/profile/properties",
-    // Element: <MyProperties />,
+    Element: <MyPropertiesPage />,
     search: "?",
     hidden: true,
     private: false,
