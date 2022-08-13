@@ -1,7 +1,5 @@
-import React, {memo} from "react";
+import React from "react";
 import { Container } from "./style";
-
-
 
 export const Button = ({
   children,
@@ -13,11 +11,11 @@ export const Button = ({
   ml,
   mb,
   mt,
-  margin
-})=>{
+  style,
+}) => {
   return (
     <Container
-      margin={margin}
+      className="nocopy"
       mr={mr}
       ml={ml}
       mb={mb}
@@ -26,8 +24,11 @@ export const Button = ({
       width={width}
       height={height}
       onClick={onClick}
+      children={children}
+      style={style}
     >
       {children}
     </Container>
-  )
-}
+  );
+};
+export default Button;

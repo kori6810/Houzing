@@ -28,7 +28,7 @@ export const navbar = [
   },
   {
     id: "2-1",
-    title: "Properties",
+    title: "Detailes",
     path: "/properties/:id",
     Element: <DetailesPage />,
     search: "?",
